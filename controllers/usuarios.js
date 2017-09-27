@@ -2,6 +2,7 @@ const express = require('express');
 const UserSchema = require('../model/userSchema');
 const expressJwt = require('express-jwt');
 const passwordHash = require('password-hash');
+<<<<<<< HEAD
 <<<<<<< dd23f79aeab44cc5846926755089fa3ed38d2558
 let router = express.Router();
 
@@ -46,6 +47,8 @@ module.exports.delete = (req, res) => {
 // //exporta como um modulo o router.
 // // module.exports = router;
 =======
+=======
+>>>>>>> 4b70255... CRUD usuario
 
 //exportando modulo CRUD
 module.exports = {
@@ -101,4 +104,7 @@ module.exports = {
   }
 
 }
+<<<<<<< HEAD
 >>>>>>> CRUD usuario
+=======
+>>>>>>> 4b70255... CRUD usuario

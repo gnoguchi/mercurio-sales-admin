@@ -1,16 +1,22 @@
 const express = require('express');
 const UserSchema = require('../model/userSchema');
+<<<<<<< HEAD
 <<<<<<< dd23f79aeab44cc5846926755089fa3ed38d2558
 const jwt = require('jsonwebtoken');
 
 let router = express.Router();
 
 =======
+=======
+>>>>>>> 4b70255... CRUD usuario
 const passwordHash = require('password-hash');
 const jwt = require('jsonwebtoken');
 
 //realiza o login verificando senha em hash e setando um token.
+<<<<<<< HEAD
 >>>>>>> CRUD usuario
+=======
+>>>>>>> 4b70255... CRUD usuario
 module.exports.login = (req, res) => {
   let query = {email : req.body.email};
 
@@ -23,6 +29,7 @@ module.exports.login = (req, res) => {
     };
     res.sendStatus(400);
   });
+<<<<<<< HEAD
 <<<<<<< dd23f79aeab44cc5846926755089fa3ed38d2558
 
 });
@@ -31,3 +38,6 @@ module.exports.login = (req, res) => {
 =======
 };
 >>>>>>> CRUD usuario
+=======
+};
+>>>>>>> 4b70255... CRUD usuario
