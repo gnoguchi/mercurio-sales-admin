@@ -1,7 +1,7 @@
 const mongoose = require('mongoose')
 const Schema = mongoose.Schema
 
-const OperacaoSchema = mongoose.model('Operacao',
+const operacaoSchema = mongoose.model('Operacao',
     {
         tipo: { type: String, required: true },
         produto: { type: Schema.ObjectId, required: true },
@@ -9,3 +9,5 @@ const OperacaoSchema = mongoose.model('Operacao',
         data: { type: Number, required: true }
     }
 )
+
+module.exports = operacaoSchema;
