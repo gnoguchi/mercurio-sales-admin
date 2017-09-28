@@ -15,8 +15,8 @@ router.put('/usuarios/update/:id', controllerUsuario.atualizar);
 //controllers de produtos
 router.get('/produtos', controllerProduto.listarTodos);
 router.post('/produtos', controllerProduto.cadastrar);
-router.get('/produtos/:id', controllerProduto.listarPorId);
-router.get('/produtos', controllerProduto.listarPorNome);
+router.get('/produtos/produto/:id', controllerProduto.listarPorId);
+router.get('/produtos/produto', controllerProduto.listarPorNome);
 router.delete('/produtos/delete/:id', controllerProduto.deletar);
 router.put('/produtos/update/:id', controllerProduto.atualizar);
 
