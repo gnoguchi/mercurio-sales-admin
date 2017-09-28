@@ -1,6 +1,4 @@
 const ProdutoSchema = require('../model/produtoSchema')
-const OperacaoSchema = require('../model/operacaoSchema')
-const express = require('express');
 
 module.exports = {
     listarTodos: (req, res) => {
@@ -17,7 +15,7 @@ module.exports = {
 
         produto.save((err, resultado) => {
             if (err) {
-                return res.send({ error: err }, 500)
+                return res.send(err, 500)
             }
             res.send(resultado, 201)
         })
