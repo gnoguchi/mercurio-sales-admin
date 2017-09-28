@@ -1,9 +1,7 @@
-const express = require('express');
+// incluindo schemas e os middleware de token do passwordHash
 const UserSchema = require('../model/userSchema');
 const jwt = require('jsonwebtoken');
 const passwordHash = require('password-hash');
-
-let router = express.Router();
 //realiza o login verificando senha em hash e setando um token.
 module.exports.login = (req, res) => {
   let query = { email: req.body.email };

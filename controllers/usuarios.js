@@ -1,9 +1,7 @@
-const express = require('express');
+// incluindo schemas e os middleware de token do passwordHash
 const UserSchema = require('../model/userSchema');
 const expressJwt = require('express-jwt');
 const passwordHash = require('password-hash');
-
-let router = express.Router();
 //exportando modulo CRUD
 module.exports = {
   //listar todos os usuarios cadastrados
@@ -51,9 +49,8 @@ module.exports = {
         if (error) {
           res.send(error, 404);
         };
-        res.send(response, 201);
+        res.send(`Usuario ${usuario.nome}, atualizado com sucesso.`, 201);
       });
-      res.send(`Usuario ${usuario.nome}, atualizado com sucesso.`, 200);
     });
   }
 
