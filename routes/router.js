@@ -26,10 +26,16 @@ router.put('/produtos/update/:id', controllerProduto.atualizar);
 router.post('/operacoes/compra', controllerOperacao.comprarProdutos)
 router.post('/operacoes/venda', controllerOperacao.venderProdutos)
 
+//controller de business analitics
 router.get('/analise/maisVendido', controllerAnalise.consultarMaisVendido)
 router.get('/analise/menosVendido', controllerAnalise.consultarMenosVendido)
-// router.get('/analise/maisVendidos', controllerAnalise.consultarMaisVendidos)
 router.get('/analise/consultarVendas', controllerAnalise.consultarVendas)
+router.get('/analise/quantidadeVenda', controllerAnalise.quantidadeVenda)
+router.get('/analise/quantidadeCompra', controllerAnalise.quantidadeCompra)
+router.get('/analise/valorTotalVenda', controllerAnalise.valorTotalVenda)
+router.get('/analise/valorTotalCompra', controllerAnalise.valorTotalCompra)
+router.get('/analise/listaVendas', controllerAnalise.listaVendas)
+router.get('/analise/listaCompras', controllerAnalise.listaCompras)
 
 
 module.exports = router;
